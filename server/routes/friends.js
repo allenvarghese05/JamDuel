@@ -123,7 +123,7 @@ router.delete('/remove/:friendId', authenticateToken, async (req, res) => {
 });
 
 // Get another user's profile (public info only)
-router.get('/profile/:userId', authenticateToken, async (req, res) => {
+router.get('/profile/:userID', authenticateToken, async (req, res) => {
   try {
     const targetUserId = req.params.userId;
     const currentUserId = req.user.id;
